@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solestyle</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+
+        <div class="shipping">
+            <i class="fa-solid fa-truck"></i>
+            <span>Free Shipping on Orders Over ₹999</span>
+        </div>
+
+        <div class="top-links">
+            <a href="#">Track Order</a>
+            <span class="divider">|</span>
+
+            <a href="#">Help &amp; Support</a>
+            <span class="divider">|</span>
+
+            
+        </div>
+
+    </div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+            <h2>SOLE<span>STYLE</span></h2>
+            <p>STEP INTO COMFORT</p>
+        </div>
+
+        <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Menu -->
+        <ul class="nav-links">
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#category">CATEGORIES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <!-- Icons -->
+        <div class="nav-icons">
+
+    <!-- Search -->
+      <a href="javascript:void(0)" onclick="openSearch()" title="Search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
+
+    <!-- Wishlist -->
+<a href="javascript:void(0)" class="wishlist"
+   onclick="openWishlist()">
+    <i class="fa-regular fa-heart"></i>
+    <span id="wishlistCount" class="wishlist-count">0</span>
+</a>
+
+<!-- Cart -->
+<a href="javascript:void(0)" class="cart-icon"
+   onclick="openCart()">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span id="cartCount" class="cart-count">0</span>
+</a>
+<a href="javascript:void(0)" class="login-icon"
+   onclick="openLogin()" title="Login">
+    <i class="fa-solid fa-user"></i>
+</a>
+</div>
+
+
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <!-- Left Content -->
+        <div class="hero-content">
+
+            <p class="collection">NEW COLLECTION 2026</p>
+
+            <h1>
+                STEP INTO<br>
+                <span>YOUR STYLE</span>
+            </h1>
+
+            <div class="line"></div>
+
+            <p class="description">
+                Premium footwear designed for comfort,<br>
+                crafted for style. Walk with confidence.
+            </p>
+
+            
+
+
+            <!-- Features -->
+            <div class="features">
+
+                <div class="feature">
+
+                    <i class="fa-regular fa-circle-check"></i>
+
+                    <div>
+                        <h4>PREMIUM</h4>
+                        <p>QUALITY</p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-truck"></i>
+
+                    <div>
+                        <h4>FAST & FREE</h4>
+                        <p>DELIVERY</p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-rotate"></i>
+
+                    <div>
+                        <h4>EASY</h4>
+                        <p>RETURNS</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Right Image -->
+        <div class="hero-image">
+
+            <div class="orange-circle"></div>
+
+            <!-- Change this image to your shoe image -->
+            <img src="heels.png"
+                 alt="Premium Footwear"
+                 class="shoe">
+
+            <div class="platform"></div>
+
+        </div>
+
+    </section>
+
+   
+
+<!-- =========================
+     SHOP OUR COLLECTION
+========================= -->
+
+<section class="collection-section">
+
+    <!-- Section Heading -->
+    <div class="collection-heading">
+
+        <span class="collection-subtitle">
+            CURATED FOR YOU
+        </span>
+
+        <h2 id="category">
+            Shop Our <strong>Collection</strong>
+        </h2>
+
+        <p>
+            Discover footwear designed to complement
+            <br>
+            every outfit and every occasion.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         COLLECTION CARDS
+    ========================= -->
+
+    <div class="collection-container">
+
+
+        <!-- Card 1 -->
+        <div class="collection-card">
+
+            <div class="collection-image">
+                <img src="heel.jpg"
+                     alt="Elegant Heels">
+            </div>
+
+            <div class="collection-content">
+
+                <span class="card-number">01</span>
+
+                <div class="orange-line"></div>
+
+                <h3>
+                    Elegant Heels
+                </h3>
+
+                <p>
+                    Step into confidence
+                    <br>
+                    and elegance.
+                </p>
+
+                <a href="Elegantheels.html">
+                    SHOP NOW
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Card 2 -->
+        <div class="collection-card">
+
+            <div class="collection-image">
+                <img src="sheo.jpg"
+                     alt="Classic Sneakers">
+            </div>
+
+            <div class="collection-content">
+
+                <span class="card-number">02</span>
+
+                <div class="orange-line"></div>
+
+                <h3>
+                    Classic Sneakers
+                </h3>
+
+                <p>
+                    Comfort meets
+                    <br>
+                    everyday style.
+                </p>
+
+                <a href="Classicsneakers.html">
+                    SHOP NOW
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Card 3 -->
+        <div class="collection-card">
+
+            <div class="collection-image">
+                <img src="flat.jpg"
+                     alt="Premium Flats">
+            </div>
+
+            <div class="collection-content">
+
+                <span class="card-number">03</span>
+
+                <div class="orange-line"></div>
+
+                <h3>
+                    Premium Flats
+                </h3>
+
+                <p>
+                    Simple, stylish and
+                    <br>
+                    comfortable.
+                </p>
+
+                <a href="Flats.html">
+                    SHOP NOW
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         BENEFITS
+    ========================= -->
+
+    <div class="benefits-container">
+
+
+        <!-- Benefit 1 -->
+        <div class="benefit-item">
+
+            <div class="benefit-icon">
+                <i class="fa-solid fa-award"></i>
+            </div>
+
+            <h4>
+                Premium Quality
+            </h4>
+
+            <p>
+                Carefully crafted with high
+                <br>
+                quality material.
+            </p>
+
+        </div>
+
+
+
+        <!-- Benefit 2 -->
+        <div class="benefit-item">
+
+            <div class="benefit-icon">
+                <i class="fa-solid fa-truck"></i>
+            </div>
+
+            <h4>
+                Fast & Free Delivery
+            </h4>
+
+            <p>
+                Free shipping on all orders
+                <br>
+                above ₹999.
+            </p>
+
+        </div>
+
+
+
+        <!-- Benefit 3 -->
+        <div class="benefit-item">
+
+            <div class="benefit-icon">
+                <i class="fa-solid fa-box-open"></i>
+            </div>
+
+            <h4>
+                Easy Returns
+            </h4>
+
+            <p>
+                Hassle free returns within
+                <br>
+                7 days.
+            </p>
+
+        </div>
+
+
+
+        <!-- Benefit 4 -->
+        <div class="benefit-item">
+
+            <div class="benefit-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <h4>
+                Secure Payments
+            </h4>
+
+            <p>
+                100% secure checkout
+                <br>
+                and payments.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!--About us -->
+
+<section class="about-hero" id="about">
+
+    <!-- LEFT CONTENT -->
+
+    <div class="about-content">
+
+        <p class="small-title">ABOUT US</p>
+
+        <h1>
+            COMFORT.<br>
+            STYLE.<br>
+            <span>EVERY STEP.</span>
+        </h1>
+
+        <div class="orange-line"></div>
+
+        <p class="description">
+            At SoleStyle, we believe the right pair of footwear can
+            take you anywhere. Our collections are thoughtfully
+            designed to blend comfort, quality, and trend — so you
+            can step out with confidence every day.
+        </p>
+
+        <p class="description">
+            From casual essentials to statement styles, we’re here
+            to support your journey, one step at a time.
+        </p>
+
+
+        <!-- FEATURES -->
+
+        <div class="features">
+
+            <div class="feature">
+
+                <i class="fa-solid fa-award"></i>
+
+                <div>
+                    <h4>PREMIUM<br>QUALITY</h4>
+                    <p>Carefully selected<br>materials</p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <i class="fa-solid fa-truck"></i>
+
+                <div>
+                    <h4>FAST & FREE<br>DELIVERY</h4>
+                    <p>Free shipping on<br>orders over ₹999</p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <i class="fa-solid fa-arrows-rotate"></i>
+
+                <div>
+                    <h4>EASY<br>RETURNS</h4>
+                    <p>Hassle-free returns<br>within 7 days</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT IMAGE -->
+
+    <div class="about-image">
+
+        <div class="orange-circle"></div>
+
+        <img src="flats.png" alt="SoleStyle Shoes">
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATISTICS ================= -->
+<section class="stats">
+
+    <div class="stat-box">
+
+        <div>
+            <h2>10K+</h2>
+            <p>Happy Customers</p>
+        </div>
+
+    </div>
+
+
+    <div class="stat-box">
+        <div>
+            <h2>500+</h2>
+            <p>Footwear Styles</p>
+        </div>
+
+    </div>
+
+
+    <div class="stat-box">
+
+        <div>
+            <h2>4.8/5</h2>
+            <p>Customer Rating</p>
+        </div>
+
+    </div>
+
+
+    <div class="stat-box">
+
+        <div>
+            <h2>PAN INDIA</h2>
+            <p>We Deliver Everywhere</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!--contact -->
+
+<section class="contact-section" id="contact">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-left">
+
+        <div class="small-heading">
+            CONTACT SOLESTYLE
+        </div>
+
+        <h1>
+            Let's talk about<br>
+            <span>your next step.</span>
+        </h1>
+
+        <p class="description">
+            Whether you need help choosing the perfect pair<br>
+            or have questions about your order,<br>
+            feel free to contact us.
+        </p>
+
+
+        <!-- Visit Us -->
+        <div class="contact-item">
+
+            <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div class="contact-text">
+                <h3>VISIT US</h3>
+                <p>
+                    SOLESTYLE Footwear<br>
+                    MG Road, Kochi, Kerala
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- Call Us -->
+        <div class="contact-item">
+
+            <div class="contact-icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <div class="contact-text">
+                <h3>CALL US</h3>
+                <p>+91 98765 43210</p>
+            </div>
+
+        </div>
+
+
+        <!-- Email -->
+        <div class="contact-item">
+
+            <div class="contact-icon">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+
+            <div class="contact-text">
+                <h3>EMAIL US</h3>
+                <p>hello@solestyle.com</p>
+            </div>
+
+        </div>
+
+
+        <!-- Social Media -->
+        <div class="follow">
+
+            <h3>FOLLOW US</h3>
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- VERTICAL LINE -->
+    <div class="vertical-line"></div>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="contact-right">
+
+        <div class="small-heading">
+            SEND US A MESSAGE
+        </div>
+
+        <h2>How can we help?</h2>
+
+        <form>
+
+            <!-- First Row -->
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>YOUR NAME</label>
+
+                    <input type="text"
+                           placeholder="Enter your name">
+                </div>
+
+
+                <div class="form-group">
+                    <label>EMAIL ADDRESS</label>
+
+                    <input type="email"
+                           placeholder="Enter your email">
+                </div>
+
+            </div>
+
+
+            <!-- Second Row -->
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>PHONE NUMBER</label>
+
+                    <input type="text"
+                           placeholder="Enter your phone number">
+                </div>
+
+
+                <div class="form-group">
+                    <label>SUBJECT</label>
+
+                    <input type="text"
+                           placeholder="How can we help?">
+                </div>
+
+            </div>
+
+
+            <!-- Message -->
+            <div class="form-group message">
+
+                <label>YOUR MESSAGE</label>
+
+                <textarea
+                    placeholder="Write your message here..."></textarea>
+
+            </div>
+
+
+            <!-- Button -->
+            <button type="submit">
+
+                SEND MESSAGE
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+    <!-- MAP SECTION -->
+    <!-- MAP -->
+
+<section class="map-section">
+
+    <iframe
+        src="https://www.google.com/maps?q=MG%20Road,%20Kochi,%20Kerala&output=embed"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+</section>
+
+
+
+<!-- =========================
+     SOLESTYLE FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+
+            <h2>SOLE<span>STYLE</span></h2>
+
+            <p class="tagline">SHOES & ACCESSORIES</p>
+
+            <p class="brand-text">
+                Step into style with our premium collection of
+                shoes & accessories. Designed for comfort.
+                Made for you.
+            </p>
+
+            <div class="footer-social">
+
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+
+            <h3>QUICK LINKS</h3>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Heels</a></li>
+                <li><a href="#">Sneakers</a></li>
+                <li><a href="#">Flats</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+
+        </div>
+
+
+        <!-- Customer Service -->
+        <div class="footer-column">
+
+            <h3>CUSTOMER SERVICE</h3>
+
+            <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order Tracking</a></li>
+                <li><a href="#">Returns & Exchanges</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Payment Methods</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Size Guide</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+
+        </div>
+
+
+        <!-- Categories -->
+        <div class="footer-column">
+
+            <h3>CATEGORIES</h3>
+
+            <ul>
+                <li><a href="#">Sneakers</a></li>
+                <li><a href="#">Heels</a></li>
+                <li><a href="#">Flats</a></li>
+            </ul>
+
+        </div>
+
+
+        <!-- Contact -->
+        <div class="footer-column contact-column">
+
+            <h3>CONTACT US</h3>
+
+            <div class="footer-contact">
+
+                <div class="contact-row">
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <p>
+                        123, Style Street,<br>
+                        Kochi, Kerala - 682001<br>
+                        India
+                    </p>
+                </div>
+
+
+                <div class="contact-row">
+                    <i class="fa-solid fa-phone"></i>
+
+                    <p>+91 98765 43210</p>
+                </div>
+
+
+                <div class="contact-row">
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <p>info@solestyle.com</p>
+                </div>
+
+
+                <div class="contact-row">
+                    <i class="fa-regular fa-clock"></i>
+
+                    <p>
+                        Mon - Sat: 9:00 AM - 8:00 PM<br>
+                        Sunday: 10:00 AM - 6:00 PM
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Benefits -->
+    <div class="footer-benefits">
+
+        <div class="benefit">
+
+            <i class="fa-solid fa-truck-fast"></i>
+
+            <div>
+                <h4>FREE SHIPPING</h4>
+                <p>On all orders above ₹999</p>
+            </div>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <i class="fa-solid fa-arrows-rotate"></i>
+
+            <div>
+                <h4>EASY RETURNS</h4>
+                <p>Within 7 days of delivery</p>
+            </div>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <div>
+                <h4>100% SECURE PAYMENT</h4>
+                <p>Safe & secure checkout</p>
+            </div>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <i class="fa-solid fa-headset"></i>
+
+            <div>
+                <h4>24/7 SUPPORT</h4>
+                <p>We are here to help you</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 SoleStyle. All Rights Reserved.
+        </p>
+
+        <div class="payment-icons">
+
+            <i class="fa-brands fa-cc-visa"></i>
+
+            <i class="fa-brands fa-cc-mastercard"></i>
+
+            <span class="rupay">RuPay</span>
+
+            <span class="upi">UPI</span>
+
+        </div>
+
+        <button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+            <i class="fa-solid fa-chevron-up"></i>
+        </button>
+
+    </div>
+
+</footer>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" id="searchOverlay">
+
+    <div class="search-box">
+
+        <button class="close-search" onclick="closeSearch()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <h2>Search SoleStyle</h2>
+
+        <div class="search-input">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search shoes..."
+    >
+
+    <button class="search-btn" onclick="searchProduct()">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+</div>
+
+        </div>
+
+        <p id="searchResult"></p>
+
+    </div>
+
+<!-- LOGIN / SIGNUP MODAL -->
+
+<div class="auth-overlay" id="authOverlay">
+
+    <div class="auth-modal">
+
+        <button class="close-auth" onclick="closeLogin()">
+            &times;
+        </button>
+
+        <div class="auth-heading">
+            <h2>SOLE<span>STYLE</span></h2>
+            <p>Welcome! Please enter your details.</p>
+        </div>
+
+        <!-- TABS -->
+
+        <div class="auth-tabs">
+            <button class="active" id="loginTab"
+                onclick="showLoginForm()">Login</button>
+
+            <button id="signupTab"
+                onclick="showSignupForm()">Sign Up</button>
+        </div>
+
+        <!-- LOGIN FORM -->
+
+        <form class="auth-form active" id="loginForm">
+
+            <div class="auth-group">
+                <label>Email Address</label>
+                <input type="email"
+                       placeholder="Enter your email" required>
+            </div>
+
+            <div class="auth-group">
+                <label>Password</label>
+                <input type="password"
+                       placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="auth-submit">
+                LOGIN
+            </button>
+
+            <p class="auth-switch">
+                Don't have an account?
+                <span onclick="showSignupForm()">Sign Up</span>
+            </p>
+
+        </form>
+
+        <!-- SIGNUP FORM -->
+
+        <form class="auth-form" id="signupForm">
+
+            <div class="auth-group">
+                <label>Full Name</label>
+                <input type="text"
+                       placeholder="Enter your name" required>
+            </div>
+
+            <div class="auth-group">
+                <label>Email Address</label>
+                <input type="email"
+                       placeholder="Enter your email" required>
+            </div>
+
+            <div class="auth-group">
+                <label>Password</label>
+                <input type="password"
+                       placeholder="Create a password"
+                       minlength="6" required>
+            </div>
+
+            <button type="submit" class="auth-submit">
+                CREATE ACCOUNT
+            </button>
+
+            <p class="auth-switch">
+                Already have an account?
+                <span onclick="showLoginForm()">Login</span>
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"
+     onclick="closeSidebars()"></div>
+
+<!-- CART SIDEBAR -->
+<div class="side-sidebar" id="cartSidebar">
+
+    <div class="sidebar-header">
+        <h2><i class="fa-solid fa-cart-shopping"></i> My Cart</h2>
+        <button onclick="closeSidebars()">&times;</button>
+    </div>
+
+    <div class="sidebar-products" id="cartItems"></div>
+
+    <div class="sidebar-footer">
+        <h3>Total: ₹<span id="cartTotal">0</span></h3>
+       <button class="sidebar-checkout" onclick="openCheckoutModal()">
+    PROCEED TO CHECKOUT
+</button>
+    </div>
+
+</div>
+<!-- CHECKOUT MODAL -->
+<div class="checkout-overlay" id="checkoutModal">
+
+    <div class="checkout-box">
+
+        <div class="checkout-header">
+            <h2><i class="fa-solid fa-credit-card"></i> Checkout</h2>
+
+            <button onclick="closeCheckoutModal()">&times;</button>
+        </div>
+
+        <form id="checkoutForm" onsubmit="placeOrder(event)">
+
+            <h3>Customer Details</h3>
+
+            <label>Full Name</label>
+            <input type="text" id="customerName"
+                   placeholder="Enter your name" required>
+
+            <label>Phone Number</label>
+            <input type="tel" id="customerPhone"
+                   placeholder="Enter phone number"
+                   pattern="[0-9]{10}" maxlength="10" required>
+
+            <label>Email Address</label>
+            <input type="email" id="customerEmail"
+                   placeholder="Enter email" required>
+
+            <label>Delivery Address</label>
+            <textarea id="customerAddress"
+                      placeholder="Enter your full address"
+                      required></textarea>
+
+            <label>Payment Method</label>
+            <select id="paymentMethod" required>
+                <option value="">Select Payment Method</option>
+                <option value="Cash on Delivery">Cash on Delivery</option>
+                <option value="UPI">UPI</option>
+                <option value="Card">Credit / Debit Card</option>
+            </select>
+
+            <div class="checkout-total">
+                Order Total: ₹<span id="checkoutTotal">0</span>
+            </div>
+
+            <button type="submit" class="place-order-btn">
+                PLACE ORDER
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+    
+<!-- WISHLIST SIDEBAR -->
+<div class="side-sidebar" id="wishlistSidebar">
+
+    <div class="sidebar-header">
+        <h2>
+            <i class="fa-regular fa-heart"></i>
+            My Wishlist
+        </h2>
+
+        <button onclick="closeSidebars()">&times;</button>
+    </div>
+
+    <div class="sidebar-products" id="wishlistItems"></div>
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+/* =================================
+   CART AND WISHLIST STORAGE
+================================= */
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+
+/* =================================
+   UPDATE CART COUNT
+================================= */
+
+function updateCartCount() {
+
+    cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let count = cart.reduce((total, item) => {
+        return total + (Number(item.quantity) || 1);
+    }, 0);
+
+    document.getElementById("cartCount").innerText = count;
+}
+
+
+/* =================================
+   UPDATE WISHLIST COUNT
+================================= */
+
+function updateWishlistCount() {
+
+    wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+    document.getElementById("wishlistCount").innerText =
+        wishlist.length;
+}
+
+
+/* =================================
+   ADD TO CART
+================================= */
+
+function addToCart(name, price, image = "heel.jpg") {
+
+    cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let productPrice = Number(
+        String(price).replace(/[^\d.]/g, "")
+    ) || 0;
+
+    let existingProduct = cart.find(
+        item => item.name === name
+    );
+
+    if (existingProduct) {
+
+        existingProduct.quantity =
+            (Number(existingProduct.quantity) || 1) + 1;
+
+    } else {
+
+        cart.push({
+
+            name: name,
+            price: productPrice,
+            image: image,
+            quantity: 1
+
+        });
+
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    updateCartCount();
+
+    alert(name + " added to Cart!");
+
+}
+
+
+/* =================================
+   ADD TO WISHLIST
+================================= */
+
+function addToWishlist(button, name, price, image) {
+
+    wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+    let exists = wishlist.some(
+        item => item.name === name
+    );
+
+    if (exists) {
+
+        alert("Already added to Wishlist!");
+
+        return;
+    }
+
+    wishlist.push({
+
+        name: name,
+        price: price,
+        image: image || "heel.jpg"
+
+    });
+
+    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+
+    updateWishlistCount();
+
+    alert(name + " added to Wishlist!");
+
+}
+
+
+/* =================================
+   OPEN CART
+================================= */
+
+function openCart() {
+
+    closeSidebars();
+
+    document.getElementById("sidebarOverlay").classList.add("active");
+
+    document.getElementById("cartSidebar").classList.add("active");
+
+    renderCartSidebar();
+}
+
+
+/* =================================
+   OPEN WISHLIST
+================================= */
+
+function openWishlist() {
+
+    closeSidebars();
+
+    document.getElementById("sidebarOverlay").classList.add("active");
+
+    document.getElementById("wishlistSidebar").classList.add("active");
+
+    renderWishlistSidebar();
+}
+
+
+/* =================================
+   CLOSE SIDEBARS
+================================= */
+
+function closeSidebars() {
+
+    document.getElementById("sidebarOverlay").classList.remove("active");
+
+    document.getElementById("cartSidebar").classList.remove("active");
+
+    document.getElementById("wishlistSidebar").classList.remove("active");
+
+}
+
+
+/* =================================
+   RENDER CART SIDEBAR
+================================= */
+
+function renderCartSidebar() {
+
+    cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let container = document.getElementById("cartItems");
+
+    let total = 0;
+
+    container.innerHTML = "";
+
+    if (cart.length === 0) {
+
+        container.innerHTML =
+            '<p class="empty-sidebar">Your cart is empty!</p>';
+
+    }
+
+    cart.forEach((item, index) => {
+
+        let price = Number(
+            String(item.price).replace(/[^\d.]/g, "")
+        ) || 0;
+
+        let quantity = Number(item.quantity) || 1;
+
+        total += price * quantity;
+
+        container.innerHTML += `
+
+            <div class="sidebar-product">
+
+                <img src="${item.image || 'heel.jpg'}"
+                     alt="${item.name}">
+
+                <div class="sidebar-product-info">
+
+                    <h4>${item.name}</h4>
+
+                    <p>₹${price} × ${quantity}</p>
+
+                </div>
+
+                <button class="remove-product"
+                    onclick="removeCartItem(${index})">
+
+                    <i class="fa-solid fa-trash"></i>
+
+                </button>
+
+            </div>
+
+        `;
+
+    });
+
+    document.getElementById("cartTotal").innerText = total;
+
+    updateCartCount();
+
+}
+
+
+/* =================================
+   REMOVE CART PRODUCT
+================================= */
+
+function removeCartItem(index) {
+
+    cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart.splice(index, 1);
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    renderCartSidebar();
+
+}
+
+
+/* =================================
+   RENDER WISHLIST SIDEBAR
+================================= */
+
+function renderWishlistSidebar() {
+
+    wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+    let container = document.getElementById("wishlistItems");
+
+    container.innerHTML = "";
+
+    if (wishlist.length === 0) {
+
+        container.innerHTML =
+            '<p class="empty-sidebar">Your wishlist is empty!</p>';
+
+    }
+
+    wishlist.forEach((item, index) => {
+
+        let price = Number(
+            String(item.price).replace(/[^\d.]/g, "")
+        ) || 0;
+
+        container.innerHTML += `
+
+            <div class="sidebar-product">
+
+                <img src="${item.image || 'heel.jpg'}"
+                     alt="${item.name}">
+
+                <div class="sidebar-product-info">
+
+                    <h4>${item.name}</h4>
+
+                    <p>₹${price}</p>
+
+                    <div class="wishlist-actions">
+
+                        <button class="wishlist-cart-btn"
+                            onclick="addWishlistToCart(${index})">
+
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                            ADD TO CART
+
+                        </button>
+
+                        <button class="remove-product"
+    onclick="removeWishlistItem(${index})">
+
+    <i class="fa-solid fa-trash"></i>
+
+</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        `;
+
+    });
+
+    updateWishlistCount();
+
+}
+
+
+/* =================================
+   REMOVE WISHLIST PRODUCT
+================================= */
+
+/* REMOVE WISHLIST PRODUCT */
+
+function removeWishlistItem(index) {
+
+    // Get latest wishlist data
+    let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+    // Remove selected product
+    wishlist.splice(index, 1);
+
+    // Save updated wishlist
+    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+
+    // Update wishlist variable
+    window.wishlist = wishlist;
+
+    // Update count
+    updateWishlistCount();
+
+    // Refresh wishlist sidebar
+    renderWishlistSidebar();
+
+}
+/* =================================
+   WISHLIST TO CART
+================================= */
+
+
+/* =========================
+   WISHLIST TO CART
+========================= */
+
+function addWishlistToCart(index) {
+
+    let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let product = wishlist[index];
+
+    if (!product) return;
+
+    let price = Number(
+        String(product.price).replace(/[^\d.]/g, "")
+    ) || 0;
+
+    // Check product already exists in cart
+    let existingProduct = cart.find(
+        item => item.name === product.name
+    );
+
+    if (existingProduct) {
+
+        existingProduct.quantity =
+            (Number(existingProduct.quantity) || 1) + 1;
+
+    } else {
+
+        cart.push({
+            name: product.name,
+            price: price,
+            image: product.image || "heel.jpg",
+            quantity: 1
+        });
+
+    }
+
+    // Save cart
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    // REMOVE PRODUCT FROM WISHLIST
+    wishlist.splice(index, 1);
+
+    // Save updated wishlist
+    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+
+    // Update counts
+    updateCartCount();
+    updateWishlistCount();
+
+    // Refresh wishlist sidebar
+    renderWishlistSidebar();
+
+    alert(product.name + " added to Cart!");
+
+}
+
+
+/* =================================
+   INITIAL LOAD
+================================= */
+
+updateCartCount();
+
+updateWishlistCount();
+// OPEN CHECKOUT MODAL
+
+// CHECKOUT MODAL OPEN ചെയ്യുക
+function openCheckoutModal() {
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    if (cart.length === 0) {
+        alert("Your cart is empty!");
+        return;
+    }
+
+    // Total Price Calculate ചെയ്യുക
+    let total = cart.reduce((sum, item) => {
+
+        let price = Number(
+            String(item.price).replace(/[^\d.]/g, "")
+        ) || 0;
+
+        let quantity = Number(item.quantity) || 1;
+
+        return sum + (price * quantity);
+
+    }, 0);
+
+    // Checkout Total Display ചെയ്യുക
+    document.getElementById("checkoutTotal").innerText =
+        total.toLocaleString("en-IN");
+
+    // Cart Sidebar Close ചെയ്യുക
+    closeSidebars();
+
+    // Checkout Modal Open ചെയ്യുക
+    document.getElementById("checkoutModal").style.display = "flex";
+
+    // Background Scroll Disable ചെയ്യുക
+    document.body.style.overflow = "hidden";
+}
+
+
+// CLOSE CHECKOUT MODAL
+
+
+function closeCheckoutModal() {
+
+    document.getElementById("checkoutModal").style.display = "none";
+
+    document.body.style.overflow = "auto";
+}
+
+
+
+// PLACE ORDER
+
+function placeOrder(event) {
+
+    event.preventDefault();
+
+    let order = {
+        name: document.getElementById("customerName").value,
+        phone: document.getElementById("customerPhone").value,
+        email: document.getElementById("customerEmail").value,
+        address: document.getElementById("customerAddress").value,
+        payment: document.getElementById("paymentMethod").value,
+        cart: JSON.parse(localStorage.getItem("cart")) || [],
+        total: document.getElementById("checkoutTotal").innerText
+    };
+
+    localStorage.setItem("lastOrder", JSON.stringify(order));
+
+    alert("Your order has been placed successfully!");
+
+    localStorage.removeItem("cart");
+
+    updateCartCount();
+    renderCartSidebar();
+
+    closeCheckoutModal();
+
+    document.getElementById("checkoutForm").reset();
+}
+
+// OPEN LOGIN MODAL
+function openLogin() {
+
+    closeSidebars();
+    closeCheckoutModal();
+
+    document.getElementById("authOverlay").style.display = "flex";
+
+    document.body.style.overflow = "hidden";
+
+}
+
+// CLOSE LOGIN MODAL
+function closeLogin() {
+
+    document.getElementById("authOverlay").style.display = "none";
+
+    document.body.style.overflow = "auto";
+
+}
+
+// SHOW LOGIN FORM
+function showLoginForm() {
+
+    document.getElementById("loginForm").classList.add("active");
+    document.getElementById("signupForm").classList.remove("active");
+
+    document.getElementById("loginTab").classList.add("active");
+    document.getElementById("signupTab").classList.remove("active");
+
+}
+
+// SHOW SIGNUP FORM
+function showSignupForm() {
+
+    document.getElementById("signupForm").classList.add("active");
+    document.getElementById("loginForm").classList.remove("active");
+
+    document.getElementById("signupTab").classList.add("active");
+    document.getElementById("loginTab").classList.remove("active");
+
+}
+
+/* MOBILE NAVBAR TOGGLE */
+
+function toggleMenu() {
+
+    document.querySelector(".nav-links")
+        .classList.toggle("active");
+
+}
+
+/* CLOSE MENU AFTER CLICKING LINK */
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", function() {
+
+        document.querySelector(".nav-links")
+            .classList.remove("active");
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

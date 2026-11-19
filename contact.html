@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us - SOLESTYLE</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="contact.css">
+
+    <style>
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111111;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 45px 55px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1px 1.55fr;
+
+    column-gap: 45px;
+
+    background: #ffffff;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.contact-left {
+    padding-right: 10px;
+}
+
+
+/* Small Orange Heading */
+
+.small-heading {
+
+    color: #f4511e;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Main Heading */
+
+.contact-left h1 {
+
+    font-size: 50px;
+
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    margin-bottom: 12px;
+}
+
+
+.contact-left h1 span {
+
+    color: #f4511e;
+}
+
+
+/* Description */
+
+.description {
+
+    font-size: 15px;
+
+    line-height: 1.55;
+
+    color: #555555;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   CONTACT ITEMS
+========================= */
+
+.contact-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Circle Icon */
+
+.contact-icon {
+
+    width: 35px;
+
+    height: 35px;
+
+    min-width: 35px;
+
+    border: 1.5px solid #f4511e;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #f4511e;
+
+    font-size: 12px;
+}
+
+
+/* Contact Text */
+
+.contact-text h3 {
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+
+    margin-bottom: 2px;
+}
+
+
+.contact-text p {
+
+    font-size: 13px;
+
+    line-height: 1.35;
+
+    color: #555555;
+}
+
+
+/* =========================
+   FOLLOW US
+========================= */
+
+.follow {
+
+    margin-top: 14px;
+}
+
+
+.follow h3 {
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+}
+
+
+.social-icons {
+
+    display: flex;
+
+    gap: 8px;
+}
+
+
+.social-icons a {
+
+    width: 21px;
+
+    height: 21px;
+
+    background: #111111;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    transition: 0.3s;
+}
+
+
+.social-icons a:hover {
+
+    background: #f4511e;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   VERTICAL LINE
+========================= */
+
+.vertical-line {
+
+    width: 1.5px;
+
+    background: #e2e2e2;
+
+    height: 100%;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.contact-right {
+
+    padding-left: 0;
+}
+
+
+/* Form Heading */
+
+.contact-right h2 {
+
+    font-size: 32px;
+
+    font-weight: 800;
+
+    margin-bottom: 17px;
+}
+
+
+/* =========================
+   FORM ROW
+========================= */
+
+.form-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 12px;
+}
+
+
+/* Form Group */
+
+.form-group {
+
+    width: 100%;
+}
+
+
+.form-group label {
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+
+    margin-bottom: 5px;
+}
+
+
+/* Inputs */
+
+.form-group input {
+
+    width: 100%;
+
+    height: 35px;
+
+    border: 1px solid #d9d9d9;
+
+    padding: 0 9px;
+
+    font-size: 11px;
+
+    outline: none;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.form-group input:focus {
+
+    border-color: #f4511e;
+}
+
+
+/* =========================
+   TEXTAREA
+========================= */
+
+.message {
+
+    margin-top: 1px;
+
+    margin-bottom: 10px;
+}
+
+
+.form-group textarea {
+
+    width: 100%;
+
+    height: 55px;
+
+    border: 1px solid #d9d9d9;
+
+    padding: 9px;
+
+    font-size: 11px;
+
+    resize: none;
+
+    outline: none;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.form-group textarea:focus {
+
+    border-color: #f4511e;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.contact-right button {
+
+    background: #111111;
+
+    color: #ffffff;
+
+    border: none;
+
+    padding: 11px 18px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    transition: 0.3s;
+}
+
+
+.contact-right button i {
+
+    font-size: 10px;
+}
+
+
+.contact-right button:hover {
+
+    background: #f4511e;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .contact-section {
+
+        grid-template-columns: 1fr;
+
+        row-gap: 30px;
+
+        padding: 40px 25px;
+    }
+
+
+    .vertical-line {
+
+        width: 100%;
+
+        height: 1px;
+    }
+
+
+    .contact-left {
+
+        padding-right: 0;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .form-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .contact-left h1,
+    .contact-right h2 {
+
+        font-size: 24px;
+    }
+
+}
+
+/* =========================
+   MAP SECTION
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+.map-section {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+    </style>
+</head>
+
+<body>
+
+<section class="contact-section">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-left">
+
+        <div class="small-heading">
+            CONTACT SOLESTYLE
+        </div>
+
+        <h1>
+            Let's talk about<br>
+            <span>your next step.</span>
+        </h1>
+
+        <p class="description">
+            Whether you need help choosing the perfect pair<br>
+            or have questions about your order,<br>
+            feel free to contact us.
+        </p>
+
+
+        <!-- Visit Us -->
+        <div class="contact-item">
+
+            <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div class="contact-text">
+                <h3>VISIT US</h3>
+                <p>
+                    SOLESTYLE Footwear<br>
+                    MG Road, Kochi, Kerala
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- Call Us -->
+        <div class="contact-item">
+
+            <div class="contact-icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <div class="contact-text">
+                <h3>CALL US</h3>
+                <p>+91 98765 43210</p>
+            </div>
+
+        </div>
+
+
+        <!-- Email -->
+        <div class="contact-item">
+
+            <div class="contact-icon">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+
+            <div class="contact-text">
+                <h3>EMAIL US</h3>
+                <p>hello@solestyle.com</p>
+            </div>
+
+        </div>
+
+
+        <!-- Social Media -->
+        <div class="follow">
+
+            <h3>FOLLOW US</h3>
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- VERTICAL LINE -->
+    <div class="vertical-line"></div>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="contact-right">
+
+        <div class="small-heading">
+            SEND US A MESSAGE
+        </div>
+
+        <h2>How can we help?</h2>
+
+        <form>
+
+            <!-- First Row -->
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>YOUR NAME</label>
+
+                    <input type="text"
+                           placeholder="Enter your name">
+                </div>
+
+
+                <div class="form-group">
+                    <label>EMAIL ADDRESS</label>
+
+                    <input type="email"
+                           placeholder="Enter your email">
+                </div>
+
+            </div>
+
+
+            <!-- Second Row -->
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>PHONE NUMBER</label>
+
+                    <input type="text"
+                           placeholder="Enter your phone number">
+                </div>
+
+
+                <div class="form-group">
+                    <label>SUBJECT</label>
+
+                    <input type="text"
+                           placeholder="How can we help?">
+                </div>
+
+            </div>
+
+
+            <!-- Message -->
+            <div class="form-group message">
+
+                <label>YOUR MESSAGE</label>
+
+                <textarea
+                    placeholder="Write your message here..."></textarea>
+
+            </div>
+
+
+            <!-- Button -->
+            <button type="submit">
+
+                SEND MESSAGE
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- Map -->
+
+<section>
+     
+    <title>Location Map</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MAP SECTION -->
+    <section class="map-section">
+
+        <iframe
+            src="https://www.google.com/maps?q=MG%20Road,%20Kochi,%20Kerala&output=embed"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    </section>
+
+</body>
+</html>
+</section>
+
+
+</body>
+</html>
